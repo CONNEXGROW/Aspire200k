@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aspire 200K - Startup Showcase Contest</title>
+    <title>Aspire 200K - Win ₹4 Lakhs!</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
         :root {
-            --primary-color: #9eff00;
-            --secondary-color: #1a237e;
-            --accent-color: #ff6b00;
-            --background-color: #0a0a0a;
+            --primary-color: #00ffff;
+            --secondary-color: #ff00ff;
+            --accent-color: #ffff00;
+            --background-color: #000000;
             --text-color: #ffffff;
-            --spacing-unit: clamp(1rem, 2vw, 2rem);
         }
 
         * {
@@ -20,254 +21,376 @@
             box-sizing: border-box;
         }
 
-        html {
-            font-size: 16px;
-        }
-
-        @media (max-width: 768px) {
-            html {
-                font-size: 14px;
-            }
-        }
-
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--background-color) 100%);
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
             color: var(--text-color);
             line-height: 1.6;
-            min-height: 100vh;
+            overflow-x: hidden;
         }
 
         .container {
-            width: min(95%, 1200px);
+            max-width: 1200px;
             margin: 0 auto;
-            padding: var(--spacing-unit);
+            padding: 20px;
         }
 
         header {
             text-align: center;
-            margin-bottom: clamp(2rem, 5vw, 4rem);
-            padding: clamp(1rem, 3vw, 3rem) 0;
+            margin-bottom: 40px;
+            position: relative;
         }
 
-        h1 {
-            font-size: clamp(1.5rem, 4vw, 2.5rem);
-            margin-bottom: var(--spacing-unit);
+        .glitch-wrapper {
+            position: relative;
+            display: inline-block;
         }
 
-        h2 {
-            font-size: clamp(2.5rem, 6vw, 4rem);
+        .glitch {
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
             color: var(--primary-color);
-            margin-bottom: var(--spacing-unit);
-            text-shadow: 0 0 10px rgba(158, 255, 0, 0.3);
-            line-height: 1.2;
+            letter-spacing: 0.1em;
+            animation: glitch 2s infinite;
+        }
+
+        .glitch::before,
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .glitch::before {
+            left: 2px;
+            text-shadow: -2px 0 var(--secondary-color);
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim 5s infinite linear alternate-reverse;
+        }
+
+        .glitch::after {
+            left: -2px;
+            text-shadow: -2px 0 var(--accent-color);
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim2 5s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch {
+            0% {
+                text-shadow: 0.05em 0 0 var(--secondary-color), -0.05em -0.025em 0 var(--accent-color),
+                    -0.025em 0.05em 0 var(--primary-color);
+            }
+            14% {
+                text-shadow: 0.05em 0 0 var(--secondary-color), -0.05em -0.025em 0 var(--accent-color),
+                    -0.025em 0.05em 0 var(--primary-color);
+            }
+            15% {
+                text-shadow: -0.05em -0.025em 0 var(--secondary-color), 0.025em 0.025em 0 var(--accent-color),
+                    -0.05em -0.05em 0 var(--primary-color);
+            }
+            49% {
+                text-shadow: -0.05em -0.025em 0 var(--secondary-color), 0.025em 0.025em 0 var(--accent-color),
+                    -0.05em -0.05em 0 var(--primary-color);
+            }
+            50% {
+                text-shadow: 0.025em 0.05em 0 var(--secondary-color), 0.05em 0 0 var(--accent-color),
+                    0 -0.05em 0 var(--primary-color);
+            }
+            99% {
+                text-shadow: 0.025em 0.05em 0 var(--secondary-color), 0.05em 0 0 var(--accent-color),
+                    0 -0.05em 0 var(--primary-color);
+            }
+            100% {
+                text-shadow: -0.025em 0 0 var(--secondary-color), -0.025em -0.025em 0 var(--accent-color),
+                    -0.025em -0.05em 0 var(--primary-color);
+            }
+        }
+
+        @keyframes glitch-anim {
+            0% {
+                clip: rect(90px, 9999px, 39px, 0);
+            }
+            5% {
+                clip: rect(83px, 9999px, 90px, 0);
+            }
+            10% {
+                clip: rect(100px, 9999px, 98px, 0);
+            }
+            15% {
+                clip: rect(95px, 9999px, 15px, 0);
+            }
+            20% {
+                clip: rect(62px, 9999px, 78px, 0);
+            }
+            25% {
+                clip: rect(10px, 9999px, 34px, 0);
+            }
+            30% {
+                clip: rect(28px, 9999px, 15px, 0);
+            }
+            35% {
+                clip: rect(89px, 9999px, 100px, 0);
+            }
+            40% {
+                clip: rect(24px, 9999px, 24px, 0);
+            }
+            45% {
+                clip: rect(31px, 9999px, 24px, 0);
+            }
+            50% {
+                clip: rect(15px, 9999px, 74px, 0);
+            }
+            55% {
+                clip: rect(25px, 9999px, 67px, 0);
+            }
+            60% {
+                clip: rect(53px, 9999px, 53px, 0);
+            }
+            65% {
+                clip: rect(100px, 9999px, 33px, 0);
+            }
+            70% {
+                clip: rect(14px, 9999px, 56px, 0);
+            }
+            75% {
+                clip: rect(85px, 9999px, 73px, 0);
+            }
+            80% {
+                clip: rect(100px, 9999px, 99px, 0);
+            }
+            85% {
+                clip: rect(54px, 9999px, 35px, 0);
+            }
+            90% {
+                clip: rect(45px, 9999px, 65px, 0);
+            }
+            95% {
+                clip: rect(31px, 9999px, 37px, 0);
+            }
+            100% {
+                clip: rect(67px, 9999px, 34px, 0);
+            }
+        }
+
+        @keyframes glitch-anim2 {
+            0% {
+                clip: rect(65px, 9999px, 91px, 0);
+            }
+            5% {
+                clip: rect(69px, 9999px, 54px, 0);
+            }
+            10% {
+                clip: rect(84px, 9999px, 75px, 0);
+            }
+            15% {
+                clip: rect(64px, 9999px, 76px, 0);
+            }
+            20% {
+                clip: rect(100px, 9999px, 23px, 0);
+            }
+            25% {
+                clip: rect(7px, 9999px, 50px, 0);
+            }
+            30% {
+                clip: rect(26px, 9999px, 23px, 0);
+            }
+            35% {
+                clip: rect(73px, 9999px, 99px, 0);
+            }
+            40% {
+                clip: rect(41px, 9999px, 74px, 0);
+            }
+            45% {
+                clip: rect(55px, 9999px, 34px, 0);
+            }
+            50% {
+                clip: rect(80px, 9999px, 3px, 0);
+            }
+            55% {
+                clip: rect(27px, 9999px, 59px, 0);
+            }
+            60% {
+                clip: rect(23px, 9999px, 74px, 0);
+            }
+            65% {
+                clip: rect(57px, 9999px, 73px, 0);
+            }
+            70% {
+                clip: rect(57px, 9999px, 93px, 0);
+            }
+            75% {
+                clip: rect(90px, 9999px, 4px, 0);
+            }
+            80% {
+                clip: rect(22px, 9999px, 21px, 0);
+            }
+            85% {
+                clip: rect(33px, 9999px, 46px, 0);
+            }
+            90% {
+                clip: rect(94px, 9999px, 80px, 0);
+            }
+            95% {
+                clip: rect(6px, 9999px, 96px, 0);
+            }
+            100% {
+                clip: rect(66px, 9999px, 53px, 0);
+            }
         }
 
         .subtitle {
-            font-size: clamp(1.2rem, 3vw, 1.5rem);
-            color: var(--primary-color);
-            margin-bottom: calc(var(--spacing-unit) * 0.5);
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-top: 20px;
         }
 
-        /* Countdown Section */
+        .prize-amount {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(255, 0, 255, 0.5);
+        }
+
         .countdown {
             text-align: center;
-            margin-bottom: clamp(2rem, 5vw, 4rem);
-        }
-
-        .countdown h3 {
-            font-size: clamp(1.2rem, 3vw, 1.8rem);
-            margin-bottom: var(--spacing-unit);
+            margin-bottom: 40px;
         }
 
         .countdown-timer {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: clamp(0.5rem, 2vw, 1.5rem);
+            display: flex;
             justify-content: center;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 var(--spacing-unit);
+            gap: 20px;
         }
 
         .countdown-item {
-            background-color: rgba(26, 35, 126, 0.5);
-            padding: clamp(1rem, 3vw, 2rem);
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
             border-radius: 10px;
-            border: 1px solid rgba(158, 255, 0, 0.2);
+            min-width: 100px;
             backdrop-filter: blur(10px);
+            border: 2px solid var(--primary-color);
+            box-shadow: 0 0 10px var(--primary-color);
         }
 
         .countdown-number {
-            font-size: clamp(2rem, 5vw, 2.5rem);
+            font-size: 2.5rem;
             font-weight: bold;
             color: var(--primary-color);
         }
 
         .countdown-label {
-            font-size: clamp(0.8rem, 2vw, 1rem);
-            margin-top: 0.5rem;
+            font-size: 1rem;
+            color: var(--text-color);
         }
 
-        /* Event Details Section */
-        .event-details {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: var(--spacing-unit);
-            margin-bottom: clamp(2rem, 5vw, 4rem);
-        }
-
-        .detail-box {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: clamp(1rem, 3vw, 2rem);
-            border-radius: 10px;
-            text-align: center;
-            backdrop-filter: blur(10px);
-        }
-
-        .detail-box .number {
-            font-size: clamp(2rem, 5vw, 2.5rem);
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-
-        .detail-box .text {
-            font-size: clamp(1rem, 2vw, 1.2rem);
-            margin-top: 0.5rem;
-        }
-
-        .price-tag {
-            font-size: clamp(0.9rem, 2vw, 1.2rem);
-            margin-top: 0.5rem;
-            opacity: 0.8;
-        }
-
-        /* CTA Button */
         .cta-button {
-            display: block;
-            width: min(90%, 300px);
-            margin: clamp(2rem, 5vw, 4rem) auto;
-            padding: clamp(0.8rem, 2vw, 1.2rem) clamp(1.5rem, 4vw, 2.5rem);
-            background-color: var(--primary-color);
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: var(--accent-color);
             color: var(--background-color);
-            text-align: center;
             text-decoration: none;
-            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            font-size: 1.2rem;
             font-weight: bold;
-            border-radius: 5px;
+            border-radius: 50px;
             transition: all 0.3s ease;
+            margin-top: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
         }
 
         .cta-button:hover {
-            background-color: var(--accent-color);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 255, 0, 0.3);
         }
 
-        /* Footer */
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                rgba(255, 255, 255, 0.3) 0%,
+                rgba(255, 255, 255, 0.1) 100%
+            );
+            transform: rotate(45deg);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover::before {
+            top: -100%;
+            left: -100%;
+        }
+
         footer {
             text-align: center;
-            margin-top: auto;
-            padding: clamp(1.5rem, 4vw, 3rem);
-            border-top: 1px solid rgba(158, 255, 0, 0.2);
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px solid var(--primary-color);
         }
 
         .footer-info {
-            color: #ccc;
-            margin-bottom: var(--spacing-unit);
-            font-size: clamp(0.9rem, 2vw, 1rem);
-        }
-
-        .footer-info p {
-            margin-bottom: 0.5rem;
+            color: var(--text-color);
+            margin-bottom: 10px;
         }
 
         .footer-info a {
             color: var(--primary-color);
             text-decoration: none;
-            transition: color 0.3s ease;
         }
 
         .footer-info a:hover {
-            color: var(--accent-color);
+            text-decoration: underline;
         }
 
         .rights {
-            font-size: clamp(0.8rem, 1.5vw, 0.9rem);
-            color: #888;
+            font-size: 0.9rem;
+            color: var(--text-color);
         }
 
-        /* Animations */
-        @keyframes fadeIn {
-            from { 
-                opacity: 0; 
-                transform: translateY(20px);
+        @media (max-width: 768px) {
+            .glitch {
+                font-size: 3rem;
             }
-            to { 
-                opacity: 1; 
-                transform: translateY(0);
-            }
-        }
 
-        .fade-in {
-            opacity: 0;
-            animation: fadeIn 0.5s ease-out forwards;
-        }
-
-        /* Touch Device Optimizations */
-        @media (hover: none) {
-            .cta-button:hover {
-                transform: none;
-                box-shadow: none;
-            }
-        }
-
-        /* Landscape Mode Optimization */
-        @media (max-height: 600px) and (orientation: landscape) {
-            .container {
-                padding: calc(var(--spacing-unit) * 0.5);
+            .prize-amount {
+                font-size: 2.5rem;
             }
 
             .countdown-timer {
-                grid-template-columns: repeat(4, 1fr);
+                flex-wrap: wrap;
             }
 
-            .event-details {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-
-        /* Print Styles */
-        @media print {
-            body {
-                background: white;
-                color: black;
-            }
-
-            .countdown-item,
-            .detail-box {
-                border: 1px solid #ccc;
-                background: none;
-            }
-
-            .cta-button {
-                display: none;
+            .countdown-item {
+                flex-basis: 40%;
+                margin-bottom: 20px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Previous HTML content remains the same -->
     <div class="container">
-        <header class="fade-in">
-            <h1>TAKE THE CHANCE TO GET</h1>
-            <h2>ASPIRE 200K</h2>
-            <p class="subtitle">HOSTED BY <span style="color: var(--primary-color);">CONNEXGROW</span></p>
-            <p>A startup pitching event for entrepreneurs</p>
+        <header>
+            <div class="glitch-wrapper">
+                <h1 class="glitch" data-text="ASPIRE 200K">ASPIRE 400K</h1>
+            </div>
+            <p class="subtitle">Your Chance to Win Big!</p>
+            <div class="prize-amount">₹4,00,000 Grand Prize!</div>
         </header>
 
-        <section class="countdown fade-in">
-            <h3>Event Starts In:</h3>
+        <section class="countdown">
+            <h2>Event Starts In:</h2>
             <div class="countdown-timer" id="countdown">
                 <div class="countdown-item">
                     <div class="countdown-number" id="days">00</div>
@@ -288,47 +411,32 @@
             </div>
         </section>
 
-        <section class="event-details fade-in">
-            <div class="detail-box">
-                <div class="number">11</div>
-                <div class="text">MAR</div>
-            </div>
-            <div class="detail-box">
-                <div class="number" style="color: var(--accent-color);">HURRY</div>
-                <div class="text" style="color: var(--accent-color);">NOW</div>
-            </div>
-            <div class="detail-box">
-                <div class="number">DON'T</div>
-                <div class="text">MISS IT</div>
-            </div>
-            <div class="detail-box">
-                <div class="number">799</div>
-                <div class="text">RS</div>
-                <div class="price-tag">+GST</div>
-            </div>
-        </section>
+        <a href="#" class="cta-button" id="registerButton">Register Now</a>
 
-        <a href="#" class="cta-button fade-in" id="registerButton">Register Now</a>
-
-        <footer class="fade-in">
+        <footer>
             <div class="footer-info">
-                <p>Managing Partner: ConnexGrow</p>
+                <p>Powered by ConnexGrow</p>
                 <p>Visit us at: <a href="http://www.connexgrow.com" target="_blank">www.connexgrow.com</a></p>
             </div>
             <div class="rights">
-                All rights reserved by NULYF GLOBAL © 2025
+                All rights reserved by<cut_off_point>
+div>
+            <div class="rights">
+                All rights reserved by
+</cut_off_point>
+
+ NULYF GLOBAL © 2025
             </div>
         </footer>
     </div>
 
-    <!-- Previous JavaScript content remains the same -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const registerButton = document.getElementById('registerButton');
             
             registerButton.addEventListener('click', function(e) {
                 e.preventDefault();
-                alert('Thank you for your interest! Registration will open soon.');
+                alert('Registration opening soon! Get ready for the chance to win ₹4,00,000!');
             });
 
             // Countdown Timer
@@ -353,22 +461,6 @@
                     document.getElementById("countdown").innerHTML = "EVENT HAS STARTED";
                 }
             }, 1000);
-
-            // Add fade-in animations with better performance
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.animationDelay = '100ms';
-                        entry.target.style.animationPlayState = 'running';
-                        observer.unobserve(entry.target);
-                    }
-                });
-            });
-
-            document.querySelectorAll('.fade-in').forEach((el) => {
-                el.style.animationPlayState = 'paused';
-                observer.observe(el);
-            });
         });
     </script>
 </body>
