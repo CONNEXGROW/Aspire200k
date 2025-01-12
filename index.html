@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aspire 200K - Win ₹4 Lakhs!</title>
+    <title>Aspire 400K - Fueling the Next Generation</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
@@ -27,6 +27,8 @@
             color: var(--text-color);
             line-height: 1.6;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         .container {
@@ -57,30 +59,6 @@
             animation: glitch 2s infinite;
         }
 
-        .glitch::before,
-        .glitch::after {
-            content: attr(data-text);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .glitch::before {
-            left: 2px;
-            text-shadow: -2px 0 var(--secondary-color);
-            clip: rect(44px, 450px, 56px, 0);
-            animation: glitch-anim 5s infinite linear alternate-reverse;
-        }
-
-        .glitch::after {
-            left: -2px;
-            text-shadow: -2px 0 var(--accent-color);
-            clip: rect(44px, 450px, 56px, 0);
-            animation: glitch-anim2 5s infinite linear alternate-reverse;
-        }
-
         @keyframes glitch {
             0% {
                 text-shadow: 0.05em 0 0 var(--secondary-color), -0.05em -0.025em 0 var(--accent-color),
@@ -109,138 +87,6 @@
             100% {
                 text-shadow: -0.025em 0 0 var(--secondary-color), -0.025em -0.025em 0 var(--accent-color),
                     -0.025em -0.05em 0 var(--primary-color);
-            }
-        }
-
-        @keyframes glitch-anim {
-            0% {
-                clip: rect(90px, 9999px, 39px, 0);
-            }
-            5% {
-                clip: rect(83px, 9999px, 90px, 0);
-            }
-            10% {
-                clip: rect(100px, 9999px, 98px, 0);
-            }
-            15% {
-                clip: rect(95px, 9999px, 15px, 0);
-            }
-            20% {
-                clip: rect(62px, 9999px, 78px, 0);
-            }
-            25% {
-                clip: rect(10px, 9999px, 34px, 0);
-            }
-            30% {
-                clip: rect(28px, 9999px, 15px, 0);
-            }
-            35% {
-                clip: rect(89px, 9999px, 100px, 0);
-            }
-            40% {
-                clip: rect(24px, 9999px, 24px, 0);
-            }
-            45% {
-                clip: rect(31px, 9999px, 24px, 0);
-            }
-            50% {
-                clip: rect(15px, 9999px, 74px, 0);
-            }
-            55% {
-                clip: rect(25px, 9999px, 67px, 0);
-            }
-            60% {
-                clip: rect(53px, 9999px, 53px, 0);
-            }
-            65% {
-                clip: rect(100px, 9999px, 33px, 0);
-            }
-            70% {
-                clip: rect(14px, 9999px, 56px, 0);
-            }
-            75% {
-                clip: rect(85px, 9999px, 73px, 0);
-            }
-            80% {
-                clip: rect(100px, 9999px, 99px, 0);
-            }
-            85% {
-                clip: rect(54px, 9999px, 35px, 0);
-            }
-            90% {
-                clip: rect(45px, 9999px, 65px, 0);
-            }
-            95% {
-                clip: rect(31px, 9999px, 37px, 0);
-            }
-            100% {
-                clip: rect(67px, 9999px, 34px, 0);
-            }
-        }
-
-        @keyframes glitch-anim2 {
-            0% {
-                clip: rect(65px, 9999px, 91px, 0);
-            }
-            5% {
-                clip: rect(69px, 9999px, 54px, 0);
-            }
-            10% {
-                clip: rect(84px, 9999px, 75px, 0);
-            }
-            15% {
-                clip: rect(64px, 9999px, 76px, 0);
-            }
-            20% {
-                clip: rect(100px, 9999px, 23px, 0);
-            }
-            25% {
-                clip: rect(7px, 9999px, 50px, 0);
-            }
-            30% {
-                clip: rect(26px, 9999px, 23px, 0);
-            }
-            35% {
-                clip: rect(73px, 9999px, 99px, 0);
-            }
-            40% {
-                clip: rect(41px, 9999px, 74px, 0);
-            }
-            45% {
-                clip: rect(55px, 9999px, 34px, 0);
-            }
-            50% {
-                clip: rect(80px, 9999px, 3px, 0);
-            }
-            55% {
-                clip: rect(27px, 9999px, 59px, 0);
-            }
-            60% {
-                clip: rect(23px, 9999px, 74px, 0);
-            }
-            65% {
-                clip: rect(57px, 9999px, 73px, 0);
-            }
-            70% {
-                clip: rect(57px, 9999px, 93px, 0);
-            }
-            75% {
-                clip: rect(90px, 9999px, 4px, 0);
-            }
-            80% {
-                clip: rect(22px, 9999px, 21px, 0);
-            }
-            85% {
-                clip: rect(33px, 9999px, 46px, 0);
-            }
-            90% {
-                clip: rect(94px, 9999px, 80px, 0);
-            }
-            95% {
-                clip: rect(6px, 9999px, 96px, 0);
-            }
-            100% {
-                clip: rect(66px, 9999px, 53px, 0);
             }
         }
 
@@ -277,6 +123,12 @@
             backdrop-filter: blur(10px);
             border: 2px solid var(--primary-color);
             box-shadow: 0 0 10px var(--primary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .countdown-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 255, 255, 0.5);
         }
 
         .countdown-number {
@@ -312,25 +164,121 @@
             box-shadow: 0 10px 20px rgba(255, 255, 0, 0.3);
         }
 
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(
-                to bottom right,
-                rgba(255, 255, 255, 0.3) 0%,
-                rgba(255, 255, 255, 0.1) 100%
-            );
-            transform: rotate(45deg);
-            transition: all 0.3s ease;
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
         }
 
-        .cta-button:hover::before {
-            top: -100%;
-            left: -100%;
+        .benefits-section {
+            border: 2px solid var(--primary-color);
+            padding: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .benefits-section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 255, 255, 0.5);
+        }
+
+        .connexgrow-header {
+            border-bottom: 2px solid var(--primary-color);
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .benefit-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 255, 255, 0.5);
+        }
+
+        .timeline-section {
+            border: 2px solid var(--primary-color);
+            padding: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .timeline-section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 255, 255, 0.5);
+        }
+
+        .timeline-header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        .timeline-item {
+            margin-bottom: 15px;
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        .partners-section {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .partners-title {
+            border: 2px solid var(--primary-color);
+            padding: 10px;
+            display: inline-block;
+            margin-bottom: 40px;
+            color: var(--accent-color);
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .partners-title:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 255, 255, 0.5);
+        }
+
+        .partners-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .partner-circle {
+            width: 80px;
+            height: 80px;
+            border: 2px solid var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .partner-circle:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 255, 255, 0.5);
         }
 
         footer {
@@ -376,6 +324,17 @@
                 flex-basis: 40%;
                 margin-bottom: 20px;
             }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        #titleNumber, #prizeAmount {
+            transition: color 0.3s ease;
         }
     </style>
 </head>
@@ -383,10 +342,10 @@
     <div class="container">
         <header>
             <div class="glitch-wrapper">
-                <h1 class="glitch" data-text="ASPIRE 200K">ASPIRE 400K</h1>
+                <h1 class="glitch" data-text="ASPIRE">ASPIRE <span id="titleNumber">0</span><span>K</span></h1>
             </div>
-            <p class="subtitle">Your Chance to Win Big!</p>
-            <div class="prize-amount">₹4,00,000 Grand Prize!</div>
+            <p class="subtitle">Fueling the Next Generation of Entrepreneurs</p>
+            <div class="prize-amount">₹<span id="prizeAmount">0</span> Grand Prize!</div>
         </header>
 
         <section class="countdown">
@@ -413,20 +372,75 @@
 
         <a href="#" class="cta-button" id="registerButton">Register Now</a>
 
+        <div class="content-grid">
+            <div class="benefits-section">
+                <div class="connexgrow-header">
+                    <span>CONNEXGROW PRESENTS</span>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div>INR 4 Lac Grand Prize</div>
+                    </div>
+                    <div class="benefit-item">
+                        <div>INR 10 LAC Crore in Perks</div>
+                    </div>
+                    <div class="benefit-item">
+                        <div>Mentoring & Incubation Support</div>
+                    </div>
+                    <div class="benefit-item">
+                        <div>Networking Opportunities</div>
+                    </div>
+                    <div class="benefit-item">
+                        <div>Learning Interaction with Mentors</div>
+                    </div>
+                    <div class="benefit-item">
+                        <div>Corporate Association Opportunity</div>
+                    </div>
+                    <div class="benefit-item">
+                        <div>Funding Readiness for selected startups</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-section">
+                <div class="timeline-header">TIMELINE</div>
+                <div class="timeline-item">
+                    <p class="timeline-date">1 MAR</p>
+                    <p>APPLICATION START</p>
+                </div>
+                <div class="timeline-item">
+                    <p class="timeline-date">15 MAR</p>
+                    <p>APPLICATION DEADLINE</p>
+                </div>
+                <div class="timeline-item">
+                    <p class="timeline-date">1 APR</p>
+                    <p>SHORTLIST ANNOUNCEMENT</p>
+                </div>
+                <div class="timeline-item">
+                    <p class="timeline-date">15 APR</p>
+                    <p>GRAND FINALE</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="partners-section">
+            <div class="partners-title">IN ASSOCIATION WITH</div>
+            <div class="partners-grid">
+                <div class="partner-circle">Partner 1</div>
+                <div class="partner-circle">Partner 2</div>
+                <div class="partner-circle">Partner 3</div>
+                <div class="partner-circle">Partner 4</div>
+                <div class="partner-circle">Partner 5</div>
+            </div>
+        </div>
+
         <footer>
             <div class="footer-info">
                 <p>Powered by ConnexGrow</p>
-                <p>Downlord our app for more 
-future updates: <a href="https://play.google.com/store/apps/details?id=com.connexgrow" target="_blank">PLAY STORE</a></p>
+                <p>Visit us at: <a href="http://www.connexgrow.com" target="_blank">www.connexgrow.com</a></p>
             </div>
             <div class="rights">
-                All rights reserved by<cut_off_point>
-                </cut_off_point></div>
-            <div class="rights">
-                All rights reserved by
-</cut_off_point>
-
- NULYF GLOBAL © 2025
+                All rights reserved by NULYF GLOBAL © 2025
             </div>
         </footer>
     </div>
@@ -440,28 +454,49 @@ future updates: <a href="https://play.google.com/store/apps/details?id=com.conne
                 alert('Registration opening soon! Get ready for the chance to win ₹4,00,000!');
             });
 
-            // Countdown Timer
-            const countDownDate = new Date("Mar 11, 2025 00:00:00").getTime();
+            // Countdown Timer (static display)
+            const countDownDate = new Date("Mar 1, 2025 00:00:00").getTime();
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
 
-            const countdownFunction = setInterval(function() {
-                const now = new Date().getTime();
-                const distance = countDownDate - now;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
 
-                document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
-                document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
-                document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
-                document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+            // Animation for 400K in title
+            const titleNumber = document.getElementById('titleNumber');
+            const prizeAmount = document.getElementById('prizeAmount');
 
-                if (distance < 0) {
-                    clearInterval(countdownFunction);
-                    document.getElementById("countdown").innerHTML = "EVENT HAS STARTED";
-                }
-            }, 1000);
+            function animateValue(obj, start, end, duration, isThousand = false) {
+                let startTimestamp = null;
+                const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    let value = Math.floor(easeOutQuart(progress) * (end - start) + start);
+                    obj.innerHTML = isThousand ? value.toLocaleString() : value;
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    }
+                };
+                window.requestAnimationFrame(step);
+            }
+
+            // Add easing function for smoother animation
+            function easeOutQuart(x) {
+                return 1 - Math.pow(1 - x, 4);
+            }
+
+            // Animate title number
+            animateValue(titleNumber, 0, 400, 8000);
+
+            // Animate prize amount
+            animateValue(prizeAmount, 0, 400000, 8000, true);
         });
     </script>
 </body>
